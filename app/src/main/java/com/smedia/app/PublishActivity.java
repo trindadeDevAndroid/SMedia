@@ -214,7 +214,7 @@ public class PublishActivity extends AppCompatActivity {
 							map.put("posterUid", FirebaseAuth.getInstance().getCurrentUser().getUid());
 							map.put("postUid", zuid);
 							map.put("postImages", new Gson().toJson(listmap_images_url));
-							if (new Gson().toJson(listmap_images_url).equals("")) {
+							if (new Gson().toJson(listmap_images_url).equals("[]")) {
 								map.put("postImage", "null");
 								map.put("postType", "text");
 							}

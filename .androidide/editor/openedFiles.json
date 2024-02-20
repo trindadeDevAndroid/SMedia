@@ -1,50 +1,20 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/.AndroidIDEProjects/SMedia/app/src/main/res/layout/perfil_fragment.xml",
+      "file": "/storage/emulated/0/.AndroidIDEProjects/SMedia/app/src/main/java/com/smedia/app/PublishActivity.java",
       "selection": {
         "end": {
-          "column": 54,
-          "index": 12283,
-          "line": 261
+          "column": 58,
+          "index": 8680,
+          "line": 217
         },
         "start": {
-          "column": 54,
-          "index": 12283,
-          "line": 261
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/.AndroidIDEProjects/SMedia/app/src/main/java/com/smedia/app/PerfilFragmentActivity.java",
-      "selection": {
-        "end": {
-          "column": 24,
-          "index": 3294,
-          "line": 93
-        },
-        "start": {
-          "column": 24,
-          "index": 3294,
-          "line": 93
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/.AndroidIDEProjects/SMedia/app/src/main/res/values/themes.xml",
-      "selection": {
-        "end": {
-          "column": 61,
-          "index": 2908,
-          "line": 38
-        },
-        "start": {
-          "column": 61,
-          "index": 2908,
-          "line": 38
+          "column": 58,
+          "index": 8680,
+          "line": 217
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/.AndroidIDEProjects/SMedia/app/src/main/res/layout/perfil_fragment.xml"
+  "selectedFile": "/storage/emulated/0/.AndroidIDEProjects/SMedia/app/src/main/java/com/smedia/app/PublishActivity.java"
 }
