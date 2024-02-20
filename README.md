@@ -5,3 +5,10 @@
     <img src="imagens/sc2.png" width="32%" alt="Screenshot 2" />
     <img src="imagens/sc3.png" width="32%" alt="Screenshot 3" />
 </div>
+
+# Downloads
+## Installation
+
+[<img src="https://github.com/Kunzisoft/Github-badge/raw/main/get-it-on-github.svg"
+    alt="Get it on F-Droid"
+    height="80">](https://github.com/trindadeDevAndroid/SMedia/releases)
