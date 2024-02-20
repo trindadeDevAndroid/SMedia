@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical"
+         android:id="@+id/linear_background">
+
+        <com.google.android.material.appbar.AppBarLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                 android:layout_height="?attr/collapsingToolbarLayoutLargeSize"
+                 android:layout_width="match_parent"
+                 style="?attr/collapsingToolbarLayoutLargeStyle">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                     android:layout_height="?attr/actionBarSize"
+                     android:layout_width="match_parent"
+                     app:title="Home"
+                     android:elevation="0dp" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:orientation="horizontal"
+             android:layout_weight="1"
+             android:id="@+id/activity_background">
+
+            <ListView
+                 android:layout_height="0dp"
+                 android:layout_width="0dp"
+                 android:divider="@null"
+                 android:padding="8dp"
+                 android:choiceMode="none"
+                 android:id="@+id/listview_comment"
+                 android:dividerHeight="0dp">
+
+            </ListView>
+
+            <ImageView
+                 android:layout_height="0dp"
+                 android:layout_width="0dp"
+                 android:src="@drawable/default_image"
+                 android:scaleType="center"
+                 android:id="@+id/imageview1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                 android:layout_height="0dp"
+                 android:layout_width="0dp"
+                 android:id="@+id/list_images" />
+
+            <ListView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:divider="@null"
+                 android:choiceMode="none"
+                 android:id="@+id/listview_publications"
+                 android:dividerHeight="0dp">
+
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

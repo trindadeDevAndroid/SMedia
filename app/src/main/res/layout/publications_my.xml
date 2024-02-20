@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:gravity="center_horizontal|center_vertical"
+         android:background="?attr/colorPrimaryContainer"
+         android:layout_margin="10dp"
+         android:padding="12dp"
+         android:orientation="vertical"
+         android:id="@+id/linear1"
+         android:layout_gravity="center_horizontal|center_vertical">
+
+        <ImageView
+             android:layout_height="50dp"
+             android:layout_width="50dp"
+             android:src="@drawable/text_icon"
+             android:scaleType="fitXY"
+             android:focusable="false"
+             android:id="@+id/imageview1" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:padding="8dp"
+             android:textSize="12sp"
+             android:focusable="false"
+             android:id="@+id/textview1"
+             android:text="" />
+
+    </LinearLayout>
+
+    <Button
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:padding="8dp"
+         android:textSize="12sp"
+         android:id="@+id/button1"
+         android:text="Send Image"
+         android:layout_gravity="center_horizontal|center_vertical" />
+
+</LinearLayout>

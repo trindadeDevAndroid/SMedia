@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMedia</string>
+    <string name="pname">Piot Accounts</string>
+    <string name="pdescrip">Permite que eles acessem suas PiotAccounts</string>
+    <string name="google_web_id">250768270454-5cg9rkchdu5sk5pk75tqn8666pa4i5m6.apps.googleusercontent.com</string>
+</resources>

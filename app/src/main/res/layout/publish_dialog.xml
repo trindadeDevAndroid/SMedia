@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:orientation="horizontal"
+         android:id="@+id/linear_background1">
+
+        <ScrollView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             style="@style/Widget.Material3.BottomSheet"
+             android:id="@+id/vscroll1">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:padding="8dp"
+                 android:orientation="vertical"
+                 android:id="@+id/linear_background2">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:paddingRight="8dp"
+                     android:paddingBottom="8dp"
+                     android:textSize="16sp"
+                     android:textColor="?attr/colorPrimary"
+                     android:focusable="false"
+                     android:id="@+id/textview4"
+                     android:paddingTop="8dp"
+                     android:text="Select the type of file to post" />
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:gravity="center_horizontal|center_vertical"
+                     android:orientation="horizontal"
+                     android:id="@+id/linear_select_type">
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:gravity="center_horizontal"
+                         android:background="?attr/colorPrimaryContainer"
+                         android:paddingRight="20dp"
+                         android:layout_margin="4dp"
+                         android:orientation="vertical"
+                         android:paddingBottom="10dp"
+                         android:paddingLeft="20dp"
+                         android:id="@+id/linear_type_text"
+                         android:paddingTop="10dp">
+
+                        <ImageView
+                             android:layout_height="50dp"
+                             android:layout_width="50dp"
+                             android:src="@drawable/text_icon"
+                             android:scaleType="fitXY"
+                             android:focusable="false"
+                             android:id="@+id/imageview1" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:padding="8dp"
+                             android:textSize="12sp"
+                             android:textColor="?attr/colorPrimary"
+                             android:focusable="false"
+                             android:id="@+id/textview2"
+                             android:text="Text " />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:gravity="center_horizontal"
+                         android:background="?attr/colorPrimaryContainer"
+                         android:paddingRight="20dp"
+                         android:layout_margin="4dp"
+                         android:orientation="vertical"
+                         android:paddingBottom="10dp"
+                         android:paddingLeft="20dp"
+                         android:id="@+id/linear_type_image"
+                         android:paddingTop="10dp">
+
+                        <ImageView
+                             android:layout_height="50dp"
+                             android:layout_width="50dp"
+                             android:src="@drawable/image_icon"
+                             android:scaleType="fitXY"
+                             android:focusable="false"
+                             android:id="@+id/imageview2" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:padding="8dp"
+                             android:textSize="12sp"
+                             android:textColor="?attr/colorPrimary"
+                             android:focusable="false"
+                             android:id="@+id/textview3"
+                             android:text="Image" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

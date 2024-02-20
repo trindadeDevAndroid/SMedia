@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical"
+         android:id="@+id/linear_background1">
+
+        <com.google.android.material.appbar.AppBarLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                 android:layout_height="?attr/collapsingToolbarLayoutLargeSize"
+                 android:layout_width="match_parent"
+                 style="?attr/collapsingToolbarLayoutLargeStyle">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                     android:layout_height="?attr/actionBarSize"
+                     android:layout_width="match_parent"
+                     app:title="New publication"
+                     android:elevation="0dp" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+             android:id="@+id/nested_scroll_view">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:padding="8dp"
+                 android:orientation="vertical"
+                 android:id="@+id/linear1">
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:background="#FFFFFF"
+                     android:padding="5dp"
+                     android:orientation="vertical"
+                     android:layout_marginLeft="5dp"
+                     android:layout_marginRight="5dp"
+                     android:id="@+id/publication_text_info_background">
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:gravity="center_vertical"
+                         android:padding="3dp"
+                         android:orientation="horizontal"
+                         android:id="@+id/linear_top2">
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:padding="8dp"
+                             android:textSize="16sp"
+                             android:layout_weight="1"
+                             android:id="@+id/title2"
+                             android:text="Text"
+                             android:textStyle="bold" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:padding="5dp"
+                             android:textSize="12sp"
+                             android:textColor="#4CAF50"
+                             android:id="@+id/lenght_100"
+                             android:text="0/100" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                         android:layout_height="50dp"
+                         android:layout_width="match_parent"
+                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                         android:id="@+id/textinputlayout1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                             android:layout_height="match_parent"
+                             android:layout_width="match_parent"
+                             android:hint="Texto "
+                             android:padding="8dp"
+                             android:textSize="12sp"
+                             android:id="@+id/text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:background="#FFFFFF"
+                     android:gravity="center_horizontal"
+                     android:layout_margin="5dp"
+                     android:orientation="vertical"
+                     android:id="@+id/publication_image_info_background">
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:padding="3dp"
+                         android:orientation="horizontal"
+                         android:id="@+id/linear_top1">
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:padding="8dp"
+                             android:textSize="16sp"
+                             android:textColor="?attr/colorPrimary"
+                             android:layout_weight="1"
+                             android:id="@+id/title1"
+                             android:text="Image"
+                             android:textStyle="bold" />
+
+                        <Button
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:padding="8dp"
+                             android:textSize="12sp"
+                             android:id="@+id/pickImage"
+                             android:text="Add photo" />
+
+                    </LinearLayout>
+
+                    <GridView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:padding="8dp"
+                         android:stretchMode="columnWidth"
+                         android:numColumns="3"
+                         android:id="@+id/gridview1">
+
+                    </GridView>
+
+                </LinearLayout>
+
+                <Button
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:padding="8dp"
+                     android:textSize="14sp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:layout_marginTop="8dp"
+                     android:id="@+id/button1"
+                     android:text="Publish" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

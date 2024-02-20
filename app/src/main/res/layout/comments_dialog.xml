@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:padding="8dp"
+         android:orientation="vertical"
+         android:id="@+id/linear1">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:padding="8dp"
+             android:textSize="18sp"
+             android:textColor="?attr/colorPrimary"
+             android:focusable="false"
+             android:id="@+id/textview1"
+             android:text="Comments" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center_horizontal|center_vertical"
+             android:padding="8dp"
+             android:textSize="16sp"
+             android:focusable="false"
+             android:id="@+id/textview2"
+             android:text="No comments yet\nBe the first to comment!" />
+
+        <ListView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:divider="@null"
+             android:padding="8dp"
+             android:choiceMode="none"
+             android:id="@+id/listview_comment"
+             android:dividerHeight="0dp">
+
+        </ListView>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:padding="8dp"
+             android:orientation="horizontal"
+             android:id="@+id/linear2">
+
+            <LinearLayout
+                 android:layout_height="50dp"
+                 android:layout_width="50dp"
+                 android:gravity="center_horizontal|center_vertical"
+                 android:background="?attr/colorPrimary"
+                 android:orientation="vertical"
+                 android:id="@+id/perfil">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:padding="8dp"
+                     android:textSize="18sp"
+                     android:textColor="#FAFAFA"
+                     android:focusable="false"
+                     android:id="@+id/short_name"
+                     android:text="SS"
+                     android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:src="@drawable/default_image"
+                 android:scaleType="fitXY"
+                 android:id="@+id/poster_image" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                 android:layout_height="50dp"
+                 android:layout_width="wrap_content"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                 android:layout_weight="1"
+                 android:id="@+id/textinputlayout1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                     android:layout_height="match_parent"
+                     android:layout_width="match_parent"
+                     android:hint="Enter a comment"
+                     android:padding="8dp"
+                     android:textColorHint="#FFFFFF"
+                     android:textSize="12sp"
+                     android:focusable="false"
+                     android:id="@+id/value" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                 android:layout_height="35dp"
+                 android:layout_width="35dp"
+                 android:src="@drawable/send_icon"
+                 android:scaleType="fitXY"
+                 android:focusable="false"
+                 android:id="@+id/send" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

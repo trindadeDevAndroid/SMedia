@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/sourcecodr"
+        android:title="Source Code"
+        android:contentDescription="SourceCode of This app"
+        android:icon="@drawable/ic_code"
+        app:showAsAction="always" />
+</menu>

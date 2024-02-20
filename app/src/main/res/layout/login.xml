@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:gravity="center_horizontal|center_vertical"
+         android:padding="8dp"
+         android:orientation="vertical"
+         android:id="@+id/linear1">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:padding="8dp"
+             android:textSize="20sp"
+             android:textColor="?attr/colorPrimary"
+             android:id="@+id/textview1"
+             android:text="Welcome to SMedia!" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:paddingRight="8dp"
+             android:paddingBottom="8dp"
+             android:textSize="11sp"
+             android:paddingLeft="8dp"
+             android:id="@+id/textview2"
+             android:paddingTop="2dp"
+             android:text="Log in First!" />
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="250dp"
+             android:layout_marginBottom="4dp"
+             android:gravity="center_vertical"
+             android:background="@drawable/shape_radius_max"
+             android:padding="8dp"
+             android:orientation="horizontal"
+             android:id="@+id/login_piot_bg">
+
+            <ImageView
+                 android:layout_height="30dp"
+                 android:layout_width="30dp"
+                 android:src="@drawable/ic_piot"
+                 android:scaleType="fitXY"
+                 android:id="@+id/imageview1" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:padding="8dp"
+                 android:textSize="14sp"
+                 android:textColor="?attr/colorPrimary"
+                 android:id="@+id/textview3"
+                 android:text="Piot Account" />
+
+        </LinearLayout>
+
+        <ListView
+             android:layout_height="0dp"
+             android:layout_width="match_parent"
+             android:padding="8dp"
+             android:choiceMode="none"
+             android:id="@+id/lv_1">
+
+        </ListView>
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="50dp"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="4dp"
+             android:layout_marginLeft="8dp"
+             android:layout_marginRight="8dp"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             android:layout_marginTop="4dp"
+             android:id="@+id/textinputlayout1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:hint="User name "
+                 android:padding="8dp"
+                 android:textSize="12sp"
+                 android:id="@+id/name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="50dp"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="4dp"
+             app:suffixText="@gmail.com"
+             android:layout_marginLeft="8dp"
+             android:layout_marginRight="8dp"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             android:layout_marginTop="4dp"
+             android:id="@+id/textinputlayout2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:hint="Email"
+                 android:padding="8dp"
+                 android:textSize="12sp"
+                 android:id="@+id/email" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="50dp"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="4dp"
+             app:endIconMode="password_toggle"
+             android:layout_marginLeft="8dp"
+             android:layout_marginRight="8dp"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             android:layout_marginTop="4dp"
+             android:id="@+id/textinputlayout3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:hint="Password "
+                 android:padding="8dp"
+                 android:textColorHint="#FFFFFF"
+                 android:textSize="12sp"
+                 android:inputType="textPassword"
+                 android:id="@+id/password" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="8dp"
+             android:textSize="12sp"
+             android:layout_marginLeft="8dp"
+             android:layout_marginRight="8dp"
+             android:id="@+id/button1"
+             android:text="Continue" />
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="250dp"
+             android:gravity="center_vertical"
+             android:background="@drawable/shape_radius_max"
+             android:padding="8dp"
+             android:orientation="horizontal"
+             android:layout_marginTop="10dp"
+             android:id="@+id/login_google_bg">
+
+            <ImageView
+                 android:layout_height="30dp"
+                 android:layout_width="30dp"
+                 android:src="@drawable/ic_google"
+                 android:scaleType="fitXY"
+                 android:id="@+id/imageview2" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:padding="8dp"
+                 android:textSize="14sp"
+                 android:textColor="?attr/colorPrimary"
+                 android:id="@+id/textview4"
+                 android:text="Google Account " />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
